@@ -1,0 +1,29 @@
+public class ArrayExists {
+
+	public static void main(String[] args) {
+		int[] array ={10,20,32,50,60};
+		int i;
+		int x=-1;
+		Boolean element = false;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		for (i=0; i<=array.length-1;i++)
+		{
+			if(n==array[i])
+			{
+				element=true;
+				x=i;
+				break;
+			}
+		}
+		if(element)
+		{
+			System.out.println("found"+"@pos"+x);
+		}
+		else
+		{
+			System.out.println("Not Found");
+		}
+	}
+
+}
